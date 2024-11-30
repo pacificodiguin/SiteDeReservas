@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Eventos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            margin: 0;
+            padding: 0;
+            background-color: #003366;
+            color: white;
+        }
+        header {
+            background-color: #002244;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .header-controls {
+            display: flex;
+            align-items: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: none;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #003366;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        button:hover {
+            background-color: rgba(0, 51, 102, 0.9);
+            color: white;
+            border-color: white;
+        }
+        .banner {
+            text-align: center;
+            padding: 20px;
+        }
+        .banner img {
+            width: 100%;
+            max-width: 1920px;
+            height: auto;
+        }
+        .banner h1, .banner p {
+            margin: 10px 0;
+        }
+        .events-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .event {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: calc(48% - 10px);
+            box-sizing: border-box;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .event:hover {
+            transform: translateY(-5px);
+        }
+        .event img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .event img:hover {
+            transform: scale(1.05);
+        }
+        .event h2 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .event p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .quero-ir-btn {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #003366;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 4px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 15px;
+        }
+        .quero-ir-btn:hover {
+            background-color: rgba(0, 51, 102, 0.9);
+            color: white;
+        }
+        .car-rental-section {
+            background-color: #004488;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>3Irmãos</h1>
+        <div class="header-controls">
+            <input type="text" placeholder="Buscar eventos...">
+            <button>Buscar</button>
+            <button>Login</button>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="fotos evento/ft1).png" alt="Banner de Eventos">
+        <h1>Descubra Nossos Eventos Exclusivos</h1>
+        <p>Momentos inesquecíveis esperam por você!</p>
+    </div>
+
+    <div class="events-container">
+        <div class="event">
+            <img src="fotos evento/Logo Minimalista (800 x 450 px).png" alt="Evento 1">
+            <h2>Music Festival</h2>
+            <p><strong>Data:</strong> 9 de Novembro, 2024</p>
+            <p><strong>Hora:</strong> 21:00</p>
+            <p>O melhor festival de música já feito, você não pode perder essa.</p>
+            <button class="quero-ir-btn" onclick="window.location.href='siteevcp.html'">Quero ir!</button>
+        </div>
+
+        <div class="event">
+            <img src="fotos evento/Banner Médio Semana Das Crianças Evento E Atividades Divertido Colorido  (800 x 450 px).png" alt="Evento 2">
+            <h2>Semana das Crianças</h2>
+            <p><strong>Data:</strong> 05 de Novembro, 2024</p>
+            <p><strong>Hora:</strong> 09:00</p>
+            <p>A melhor diversão para um momento com seus filhos.</p>
+            <button class="quero-ir-btn" onclick="window.location.href='siteevcp.html'">Quero ir!</button>
+        </div>
+
+        <div class="event">
+            <img src="fotos evento/Banner de Halloween Pessoal sobre Evento Virtual Escuro e Tendência em Preto e Branco (800 x 450 px).png" alt="Evento 3">
+            <h2>Festa Fantasia</h2>
+            <p><strong>Data:</strong> 30 de Novembro, 2024</p>
+            <p><strong>Hora:</strong> 23:00</p>
+            <p>Vista sua fantasia e seja o rei do festa.</p>
+            <button class="quero-ir-btn" onclick="window.location.href='siteevcp.html'">Quero ir!</button>
+        </div>
+
+        <div class="event">
+            <img src="fotos evento/Banner campeonato de judô moderno azul (800 x 450 px).png" alt="Evento 4">
+            <h2>Campeonato de Judô</h2>
+            <p><strong>Data:</strong> 22 de Novembro, 2024</p>
+            <p><strong>Hora:</strong> 16:00</p>
+            <p>Venha acompanhar um campeonato intenso.</p>
+            <button class="quero-ir-btn" onclick="window.location.href='siteevcp.html'">Quero ir!</button>
+        </div>
+    </div>
+
+    <div class="car-rental-section">
+        <h2>Não tem como ir ao evento?</h2>
+        <p>Se interessou em um show, mas não tem como ir? <strong>Consiga um carro agora!</strong></p>
+        <button class="quero-ir-btn">Alugue um Carro</button>
+    </div>
+</body>
+</html>

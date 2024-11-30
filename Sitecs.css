@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #003366;
+}
+header {
+    font-family:'Montserrat', sans-serif;
+    background-color: #002244;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 0;
+}
+h3{
+    color: #ffffff;
+}
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #003366;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.tablink {
+    background-color: white;
+    border: none;
+    padding: 14px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+
+.tablink:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+    position: static;
+}
+
+button[type="submit"]:hover {
+    background-color: #005fa3;
+}

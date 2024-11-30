@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas 3 Irmãos</title>
+    <link rel="stylesheet" href="Sitecs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Reservas 3 Irmãos</h1>
+        <h3>Faça Sua Próxima Reserva Conosco!</h3>
+
+    <nav class="tab-menu">
+        <button class="tablink" onclick="openTab('hotel')">Hotel</button>
+        <button class="tablink" onclick="openTab('restaurante')">Restaurante</button>
+        <button class="tablink" onclick="openTab('evento')">Evento</button>
+    </nav>
+    </header>
+    
+    <div id="hotel" class="tab-content">
+        <h2>Reserve um Hotel</h2>
+        <form action="SiteReserva.php">
+            <label for="checkin-hotel">Check-in:</label>
+            <input type="date" id="checkin-hotel" required>
+            
+            <label for="checkout-hotel">Check-out:</label>
+            <input type="date" id="checkout-hotel" required>
+            
+            <label for="quartos-hotel">Quartos:</label>
+            <input type="number" id="quartos-hotel" min="1" value="1">
+            
+            <button type="submit">Pesquisar Hotéis</button>
+        </form>
+    </div>
+
+    <div id="restaurante" class="tab-content" style="display:none">
+        <h2>Reserve um Restaurante</h2>
+        <form action="SistemaDeReserva (1)/SiteRestaurante.php">
+            <label for="Horário">Escolha um Horário:</label>
+            <select id="Horário" name="Horário">
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+                
+            </select>
+
+            <label for="cidades">Escolha uma cidade:</label>
+            <select id="cidades" name="cidades">
+                <option value="Castanhal">Castanhal</option>
+                <option value="Belém">Belém</option>
+                <option value="Cametá">Cametá</option>
+                <option value="Marituba">Marituba</option>
+                <option value="Abaetetuba">Abaetetuba</option>
+            </select><br><br><br>
+            
+            <button type="submit">Pesquisar Restaurantes</button>
+        </form>
+    </div>
+
+    <div id="evento" class="tab-content" style="display:none">
+        <h2>Reserve um Evento</h2>
+        <form action="SiteEvento.html">
+            <label for="tipo-evento">Tipo de Evento:</label>
+            <input type="text" id="tipo-evento" placeholder="Qual é o evento?" required>
+            
+            <label for="data-evento">Data:</label>
+            <input type="date" id="data-evento" required>
+            
+            <label for="pessoas-evento">Número de Pessoas:</label>
+            <input type="number" id="pessoas-evento" min="1" value="50">
+            
+            <button type="submit">Pesquisar Eventos</button>
+        </form>
+    </div>
+
+    <script src="Sitejs.js"></script>
+</body>
+</html>
